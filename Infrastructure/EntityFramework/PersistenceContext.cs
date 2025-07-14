@@ -69,11 +69,10 @@ namespace Infrastructure.EntityFramework
             modelBuilder.Entity<RoleModule>().HasData(
                 new RoleModule { RoleId = 1, ModuleId = 1 },
                 new RoleModule { RoleId = 1, ModuleId = 2 },
-                new RoleModule { RoleId = 1, ModuleId = 3 },
-                new RoleModule { RoleId = 1, ModuleId = 4 },
+              
 
-                new RoleModule { RoleId = 2, ModuleId = 2 },
-                new RoleModule { RoleId = 2, ModuleId = 3 }
+                new RoleModule { RoleId = 2, ModuleId = 1 },
+                new RoleModule { RoleId = 2, ModuleId = 2 }
             );
 
             modelBuilder.Entity<User>().HasData(new User

@@ -103,9 +103,7 @@ namespace Infrastructure.Migrations
                 values: new object[,]
                 {
                     { 1, "Vehículos" },
-                    { 2, "Reservas" },
-                    { 3, "Historial de Reservas" },
-                    { 4, "Configuraciones" }
+                    { 2, "Reservas" }
                 });
 
             migrationBuilder.InsertData(
@@ -126,10 +124,8 @@ namespace Infrastructure.Migrations
                 {
                     { 1, 1 },
                     { 2, 1 },
-                    { 3, 1 },
-                    { 4, 1 },
-                    { 2, 2 },
-                    { 3, 2 }
+                    { 1, 2 },
+                    { 2, 2 }
                 });
 
             migrationBuilder.InsertData(

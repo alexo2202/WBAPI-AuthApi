@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Infrastructure.Migrations
 {
     [DbContext(typeof(PersistenceContext))]
-    [Migration("20250714091057_addAuthSchema")]
+    [Migration("20250714133232_addAuthSchema")]
     partial class addAuthSchema
     {
         /// <inheritdoc />
@@ -51,16 +51,6 @@ namespace Infrastructure.Migrations
                         {
                             Id = 2,
                             Name = "Reservas"
-                        },
-                        new
-                        {
-                            Id = 3,
-                            Name = "Historial de Reservas"
-                        },
-                        new
-                        {
-                            Id = 4,
-                            Name = "Configuraciones"
                         });
                 });
 
@@ -120,23 +110,13 @@ namespace Infrastructure.Migrations
                         },
                         new
                         {
-                            RoleId = 1,
-                            ModuleId = 3
-                        },
-                        new
-                        {
-                            RoleId = 1,
-                            ModuleId = 4
+                            RoleId = 2,
+                            ModuleId = 1
                         },
                         new
                         {
                             RoleId = 2,
                             ModuleId = 2
-                        },
-                        new
-                        {
-                            RoleId = 2,
-                            ModuleId = 3
                         });
                 });
 
